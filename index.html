@@ -1,132 +1,246 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kế hoạch Vũng Tàu 2N1Đ</title>
-  <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #f5f7fa; color: #333; }
-    .container { max-width: 480px; margin: auto; padding: 16px; }
-    h1 { font-size: 22px; text-align: center; }
-    .card { background: white; border-radius: 12px; padding: 16px; margin-bottom: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-    .time { font-weight: bold; color: #0077cc; }
-    .day-title { font-size: 18px; margin-bottom: 8px; color: #ff6600; }
-    ul { padding-left: 16px; }
-    .budget { background: #e8f5e9; border-left: 4px solid #2e7d32; }
-    .price { color: #2e7d32; font-weight: bold; }
-    .note { color: #666; font-size: 13px; }
-    .footer { text-align: center; font-size: 12px; color: #777; margin-top: 20px; }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Vũng Tàu 2N1Đ (3 người)</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kế hoạch Vũng Tàu 2N1Đ</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+        background: #f9fafb;
+        color: #1f2937;
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 28px;
+        text-align: center;
+        color: #111827;
+        margin-bottom: 20px;
+      }
+      .card {
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+      .time {
+        font-weight: bold;
+        color: #2563eb;
+      }
+      .day-title {
+        font-size: 20px;
+        margin-bottom: 12px;
+        color: #f97316;
+        font-weight: 600;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 12px;
+      }
+      .budget {
+        background: #f0fdf4;
+        border-left: 6px solid #22c55e;
+      }
+      .price {
+        color: #16a34a;
+        font-weight: bold;
+      }
+      .note {
+        color: #6b7280;
+        font-size: 14px;
+      }
+      a {
+        color: #2563eb;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+        font-size: 14px;
+        color: #9ca3af;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Vũng Tàu 2N1Đ (3 người)</h1>
 
-    <div class="card">
-      <div class="day-title">Ngày 1 (Chi tiết từng giờ)</div>
-      <ul>
-        <li>
-          <span class="time">05:30</span> - Xuất phát từ TP.HCM (xe máy)
-          <div class="note">Route: QL51 → Vũng Tàu (~2.5h)</div>
-          <div class="price">Xăng: ~150k/xe (~300k/2 xe)</div>
-        </li>
+      <div class="card">
+        <div class="day-title">Ngày 1 (Chi tiết từng giờ)</div>
+        <ul>
+          <li>
+            <span class="time">05:30</span> - Xuất phát từ TP.HCM (xe máy)
+            <div class="note">Route: QL51 → Vũng Tàu (~2.5h)</div>
+            <!-- <div class="price">Xăng: ~150k/xe (~300k/2 xe)</div> -->
+          </li>
 
-        <li>
-          <span class="time">08:30</span> - Ăn sáng
-          <div class="note">Gợi ý: Bánh khọt Gốc Vú Sữa / bún riêu / hủ tiếu</div>
-          <div class="price">~40–60k/người (~150k nhóm)</div>
-        </li>
+          <li>
+            <span class="time">08:30</span> - Ăn sáng
+          </li>
 
-        <li>
-          <span class="time">09:30</span> - Đi chơi
-          <div class="note">Bãi Sau → Tượng Chúa → Hải đăng</div>
-          <div class="price">Free (gửi xe ~5–10k/lượt)</div>
-        </li>
+          <li>
+            <span class="time">09:30</span> - Đi chơi
+            <div class="note">Bãi Sau → Tượng Chúa → Hải đăng</div>
+            <!-- <div class="price">Free (gửi xe ~5–10k/lượt)</div> -->
+          </li>
 
-        <li>
-          <span class="time">12:00</span> - Ăn trưa
-          <div class="note">Cơm bình dân (quán ven đường Thùy Vân / Phan Chu Trinh)</div>
-          <div class="price">~50–70k/người (~180k nhóm)</div>
-        </li>
+          <li>
+            <span class="time">12:00</span> - Ăn trưa
+          </li>
 
-        <li>
-          <span class="time">13:30</span> - Check-in khách sạn
-          <div class="note">Khu Bãi Sau – gần biển, tiện đi lại</div>
-          <div class="price">~350–450k/phòng (3 người)</div>
-        </li>
+          <li>
+            <span class="time">13:30</span> - Check-in khách sạn
+            <!-- <div class="note">Khu Bãi Sau – gần biển, tiện đi lại</div> -->
+            <!-- <div class="price">~350–450k/phòng (3 người)</div> -->
+          </li>
 
-        <li>
-          <span class="time">15:30</span> - Tắm biển + cafe
-          <div class="note">Cafe view biển: Lan Rừng / Gazebo / quán local</div>
-          <div class="price">Cafe: ~30–50k/người (~120k nhóm)</div>
-        </li>
+          <li>
+            <span class="time">15:30</span> - Tắm biển + cafe
+            <div class="note">
+              Cafe view biển: Lan Rừng / Gazebo / quán local
+            </div>
+            <!-- <div class="price">Cafe: ~30–50k/người (~120k nhóm)</div> -->
+          </li>
 
-        <li>
-          <span class="time">19:00</span> - Ăn tối hải sản
-          <div class="note">Gợi ý: Gành Hào (view đẹp) hoặc quán ốc bình dân</div>
-          <div class="price">~400–500k/3 người (lẩu cá đuối + ốc)</div>
-        </li>
+          <li>
+            <span class="time">19:00</span> - Ăn tối hải sản
+          </li>
 
-        <li>
-          <span class="time">21:00</span> - Chợ đêm
-          <div class="note">Ăn vặt: bánh tráng nướng, xiên que, trà sữa</div>
-          <div class="price">~50k/người (~150k nhóm)</div>
-        </li>
-      </ul>
+          <li>
+            <span class="time">21:00</span> - Chợ đêm
+            <div class="note">Ăn vặt: bánh tráng nướng, xiên que, trà sữa</div>
+            <!-- <div class="price">~50k/người (~150k nhóm)</div> -->
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="day-title">Ngày 2 (Chi tiết từng giờ)</div>
+        <ul>
+          <li>
+            <span class="time">06:00</span> - Ngắm biển sáng
+            <div class="note">Dạo Bãi Sau hoặc cafe sáng</div>
+            <!-- <div class="price">Cafe: ~30k/người</div> -->
+          </li>
+
+          <li>
+            <span class="time">07:30</span> - Ăn sáng
+          <li>
+            <span class="time">08:30</span> - Check-in
+            <div class="note">Mũi Nghinh Phong + Đồi Con Heo</div>
+            <!-- <div class="price">Free (gửi xe ~5–10k)</div> -->
+          </li>
+
+          <li><span class="time">11:00</span> - Trả phòng</li>
+
+          <li>
+            <span class="time">12:00</span> - Ăn trưa
+            <div class="note">Quán cơm / bún trước khi về</div>
+            <!-- <div class="price">~50k/người (~150k nhóm)</div> -->
+          </li>
+
+          <li>
+            <span class="time">13:00</span> - Về TP.HCM
+            <!-- <div class="price">Xăng: ~150k</div> -->
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="day-title">Danh sách cửa hàng</div>
+        <ul>
+          <li>
+            <strong>Ăn sáng:</strong>
+            <ul>
+              <li>
+                Bánh khọt Dì Hương -
+                <a href="https://maps.app.goo.gl/h8kESD512M57T2Tg6">Địa chỉ</a>
+              </li>
+              <li>
+                Bánh Khọt 209 Vũng Tàu -
+                <a href="https://maps.app.goo.gl/3qr8cXExzz9sdFkM8">Địa chỉ</a>
+              </li>
+              <li>
+                Bún Càng Cúm -
+                <a href="https://maps.app.goo.gl/Z59HVNtkCw1nJnBZ7">Địa chỉ</a>
+              </li>
+              <li>
+                Bánh canh ghẹ - Hủ tiếu hải sản Cô 6 - mở 24/24 -
+                <a href="https://maps.app.goo.gl/xZADXb7ZUcoJ7cCeA">Địa chỉ</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Ăn trưa:</strong>
+            <ul>
+              <li>
+                Cơm bình dân Thùy Vân -
+                <a href="https://maps.app.goo.gl/example">Địa chỉ</a>
+              </li>
+              <li>
+                Quán cơm Phan Chu Trinh -
+                <a href="https://maps.app.goo.gl/example">Địa chỉ</a>
+              </li>
+              <li>
+                Bún bò Huế 68 -
+                <a href="https://maps.app.goo.gl/example">Địa chỉ</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Ăn tối:</strong>
+            <ul>
+              <li>
+                Gành Hào - <a href="https://maps.app.goo.gl/example">Địa chỉ</a>
+              </li>
+              <li>
+                Quán ốc bình dân -
+                <a href="https://maps.app.goo.gl/example">Địa chỉ</a>
+              </li>
+              <li>
+                Lẩu cá đuối 7 Lượm -
+                <a href="https://maps.app.goo.gl/example">Địa chỉ</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card budget">
+        <div class="day-title">Tổng chi phí chi tiết</div>
+        <ul>
+          <li>Xăng xe: ~300–400k</li>
+          <li>Khách sạn: ~400k</li>
+          <li>Ăn sáng: ~270k</li>
+          <li>Ăn trưa: ~330k</li>
+          <li>Ăn tối: ~450k</li>
+          <li>Cafe + ăn vặt: ~300k</li>
+          <li><strong>Tổng: ~2.0 – 2.3 triệu (~700–800k/người)</strong></li>
+        </ul>
+      </div>
+
+      <div class="footer">
+        Tip: tránh quán đông khách du lịch, hỏi giá trước khi ăn
+      </div>
     </div>
-
-    <div class="card">
-      <div class="day-title">Ngày 2 (Chi tiết từng giờ)</div>
-      <ul>
-        <li>
-          <span class="time">06:00</span> - Ngắm biển sáng
-          <div class="note">Dạo Bãi Sau hoặc cafe sáng</div>
-          <div class="price">Cafe: ~30k/người</div>
-        </li>
-
-        <li>
-          <span class="time">07:30</span> - Ăn sáng
-          <div class="note">Bánh mì xíu mại / bún bò</div>
-          <div class="price">~30–40k/người (~120k nhóm)</div>
-        </li>
-
-        <li>
-          <span class="time">08:30</span> - Check-in
-          <div class="note">Mũi Nghinh Phong + Đồi Con Heo</div>
-          <div class="price">Free (gửi xe ~5–10k)</div>
-        </li>
-
-        <li>
-          <span class="time">11:00</span> - Trả phòng
-        </li>
-
-        <li>
-          <span class="time">12:00</span> - Ăn trưa
-          <div class="note">Quán cơm / bún trước khi về</div>
-          <div class="price">~50k/người (~150k nhóm)</div>
-        </li>
-
-        <li>
-          <span class="time">13:00</span> - Về TP.HCM
-          <div class="price">Xăng: ~150k</div>
-        </li>
-      </ul>
-    </div>
-
-    <div class="card budget">
-      <div class="day-title">Tổng chi phí chi tiết</div>
-      <ul>
-        <li>Xăng xe: ~300–400k</li>
-        <li>Khách sạn: ~400k</li>
-        <li>Ăn sáng: ~270k</li>
-        <li>Ăn trưa: ~330k</li>
-        <li>Ăn tối: ~450k</li>
-        <li>Cafe + ăn vặt: ~300k</li>
-        <li><strong>Tổng: ~2.0 – 2.3 triệu (~700–800k/người)</strong></li>
-      </ul>
-    </div>
-
-    <div class="footer">Tip: tránh quán đông khách du lịch, hỏi giá trước khi ăn</div>
-  </div>
-</body>
+  </body>
 </html>
